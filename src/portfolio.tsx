@@ -9,16 +9,16 @@ import {
   ChevronDown,
   Menu,
   X,
-  Code,
-  Briefcase,
+  // Code,
+  // Briefcase,
   User,
-  MessageCircle,
+  // MessageCircle,
   FileType,
-  FileSignature,
+  // FileSignature,
 } from "lucide-react";
 import { SiMedium } from "react-icons/si";
 import { PiWhatsappLogoLight } from "react-icons/pi";
-import { RiMediumLine } from "react-icons/ri";
+// import { RiMediumLine } from "react-icons/ri";
 import Image from "next/image";
 import taiwo from "../public/taiwo.png";
 import goldies from "../public/goldies.png";
@@ -27,7 +27,7 @@ import blog from "../public/blogpost.png";
 import beauty from "../public/beautyexpat.png";
 import kiddies from "../public/kiddiesAuto.png";
 import job from "../public/jobPosts.png";
-import reviews from "../public/reviews.png";
+// import reviews from "../public/reviews.png";
 import quizApp from "../public/quiz_app.png";
 import wanderlay from "../public/wanderlay.png";
 import tsu from "../public/TSU.png";
@@ -56,7 +56,8 @@ const Portfolio: React.FC = () => {
   const [activeSection, setActiveSection] = useState("hero");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [imageError, setImageError] = useState(false);
+  // remove unused vars
+  const [imageError, _setImageError] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -165,7 +166,7 @@ const Portfolio: React.FC = () => {
     {
       id: 9,
       title: "Wanderlay App",
-      description: "This is the landing page of a travel company's website.",
+      description: "This is the landing page of a travel companyit&apos;ss website.",
       tech: ["NextJS", "Typescript", "HTML", "Tailwind", "CSS"],
       github: "https://github.com/TaiwoSaidat/wanderlay-travel-app/",
       demo: "https://wanderlay-travel-app.vercel.app/",
@@ -175,7 +176,7 @@ const Portfolio: React.FC = () => {
       id: 10,
       title: "Tech Start Up App",
       description:
-        "This is the landing page of a Software Development business's website.",
+        "This is the landing page of a Software Development business&apos;s website.",
       tech: ["NextJS", "Typescript", "Tailwind", "HTML", "CSS"],
       github: "https://github.com/TaiwoSaidat/tech-start-up-app/",
       demo: "https://tech-start-up-app.vercel.app/",
@@ -309,7 +310,6 @@ const Portfolio: React.FC = () => {
               </div>
             </div>
           </div>
-
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
             Taiwo Oyewale
           </h1>
@@ -591,14 +591,13 @@ const Portfolio: React.FC = () => {
                 className="bg-slate-800 rounded-lg overflow-hidden border border-slate-700 hover:border-blue-500/30 transition-all duration-300 group hover:transform hover:scale-105"
               >
                 <div className="h-48 bg-slate-700 relative overflow-hidden">
-                  <img
+                  <Image
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent" />
                 </div>
-
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-3 text-blue-400">
                     {project.title}
@@ -648,20 +647,16 @@ const Portfolio: React.FC = () => {
       <section id="contact" className="py-20 px-6 bg-slate-800/50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           {/* <h3 className="text-2xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             Dear future employer,
           </h3> */}
           <p className="text-xl text-slate-300 mb-12 leading-relaxed">
-            I'm always interested in new opportunities and exciting projects.
-            Let's connect and discuss how we can create something amazing
+            I&apos;m always interested in new opportunities and exciting projects.
+            Let&apos;s connect and discuss how we can create something amazing
             together.
           </p>
-
-          {/* DEAR FUTURE EMPLOYER SECTION */}
-          {/* ADD RESUME LINK */}
-          {/* add padding above image */}
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="p-6 bg-slate-800 rounded-lg border border-slate-700">
