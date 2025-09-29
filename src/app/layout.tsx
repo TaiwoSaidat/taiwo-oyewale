@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Taiwo Oyewale | Software Engineer",
-  description: "My Portfolio App",
+  title: "Taiwo Oyewale | Frontend Software Engineer",
+  description: "My Portfolio Website",
 };
 
 export default function RootLayout({
