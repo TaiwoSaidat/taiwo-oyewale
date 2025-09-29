@@ -9,25 +9,20 @@ import {
   ChevronDown,
   Menu,
   X,
-  // Code,
-  // Briefcase,
   User,
-  // MessageCircle,
   FileType,
-  // FileSignature,
 } from "lucide-react";
 import { SiMedium } from "react-icons/si";
 import { PiWhatsappLogoLight } from "react-icons/pi";
-// import { RiMediumLine } from "react-icons/ri";
 import Image from "next/image";
 import taiwo from "../public/taiwo.png";
 import goldies from "../public/goldies.png";
 import finloop from "../public/finloop.png";
+import billia from "../public/billia.png";
 import blog from "../public/blogpost.png";
 import beauty from "../public/beautyexpat.png";
 import kiddies from "../public/kiddiesAuto.png";
 import job from "../public/jobPosts.png";
-// import reviews from "../public/reviews.png";
 import quizApp from "../public/quiz_app.png";
 import wanderlay from "../public/wanderlay.png";
 import tsu from "../public/TSU.png";
@@ -56,7 +51,6 @@ const Portfolio: React.FC = () => {
   const [activeSection, setActiveSection] = useState("hero");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  // remove unused vars
   const [imageError, _setImageError] = useState(false);
 
   useEffect(() => {
@@ -134,6 +128,16 @@ const Portfolio: React.FC = () => {
       image: kiddies.src,
     },
     {
+      id: 11,
+      title: "Billia Application",
+      description:
+        "Developed an app suitable for sorting and payment of bills.",
+      tech: ["Next.js", "TypeScript", "ShadCN", "SCSS"],
+      github: "https://github.com/TaiwoSaidat/billia-app",
+      demo: "https://billia-app.vercel.app/",
+      image: billia.src,
+    },
+    {
       id: 6,
       title: "Job Listings App",
       description:
@@ -166,7 +170,8 @@ const Portfolio: React.FC = () => {
     {
       id: 9,
       title: "Wanderlay App",
-      description: "This is the landing page of a travel companyit&apos;ss website.",
+      description:
+        "This is the landing page of a travel companyit&apos;ss website.",
       tech: ["NextJS", "Typescript", "HTML", "Tailwind", "CSS"],
       github: "https://github.com/TaiwoSaidat/wanderlay-travel-app/",
       demo: "https://wanderlay-travel-app.vercel.app/",
@@ -240,8 +245,24 @@ const Portfolio: React.FC = () => {
       >
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex justify-between items-center h-16">
-            <div className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              Taiwo Oyewale
+            <div className=" flex gap-2 text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+              <Link href="/" className="flex items-center">
+                <p className="">Taiwo Oyewale</p>
+              </Link>
+
+              <div className=" items-center flex">
+                <Link
+                  href="/Taiwo_Oyewale_Resume_Frontend_Engineer.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 bg-transparent rounded-full hover:bg-slate-700 transition-colors group"
+                >
+                  <FileType
+                    size={16}
+                    className="text-slate-300 group-hover:text-blue-400 transition-colors"
+                  />
+                </Link>
+              </div>
             </div>
 
             {/* Desktop Navigation */}
@@ -340,18 +361,19 @@ const Portfolio: React.FC = () => {
           </div>
 
           <div className="flex justify-center space-x-6">
-            <a
+            <Link
               href="https://github.com/TaiwoSaidat"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors group"
             >
+              {" "}
               <Github
                 size={24}
                 className="group-hover:text-blue-400 transition-colors"
               />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.linkedin.com/in/taiwo-oyewale199/"
               target="_blank"
               rel="noopener noreferrer"
@@ -361,8 +383,8 @@ const Portfolio: React.FC = () => {
                 size={24}
                 className="group-hover:text-blue-400 transition-colors"
               />
-            </a>
-            <a
+            </Link>
+            <Link
               href="/Taiwo_Oyewale_Resume_Frontend_Engineer.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -372,8 +394,8 @@ const Portfolio: React.FC = () => {
                 size={24}
                 className="group-hover:text-blue-400 transition-colors"
               />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://medium.com/@oyewaletaiwo1803"
               target="_blank"
               rel="noopener noreferrer"
@@ -383,8 +405,8 @@ const Portfolio: React.FC = () => {
                 size={24}
                 className="group-hover:text-blue-400 transition-colors"
               />
-            </a>
-            <a
+            </Link>
+            <Link
               href="mailto:oyewaletaiwo1803@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -394,8 +416,8 @@ const Portfolio: React.FC = () => {
                 size={24}
                 className="group-hover:text-blue-400 transition-colors"
               />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://wa.me/+2348145701901"
               target="_blank"
               rel="noopener noreferrer"
@@ -405,7 +427,7 @@ const Portfolio: React.FC = () => {
                 size={24}
                 className="group-hover:text-blue-400 transition-colors"
               />
-            </a>
+            </Link>
           </div>
 
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
@@ -594,6 +616,8 @@ const Portfolio: React.FC = () => {
                   <Image
                     src={project.image}
                     alt={project.title}
+                    width={400}
+                    height={192}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent" />
@@ -618,20 +642,20 @@ const Portfolio: React.FC = () => {
                   </div>
 
                   <div className="flex space-x-4">
-                    <a
+                    <Link
                       href={project.github}
                       className="flex items-center text-sm text-slate-400 hover:text-blue-400 transition-colors"
                     >
                       <Github size={16} className="mr-1" />
                       Code
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href={project.demo}
                       className="flex items-center text-sm text-slate-400 hover:text-blue-400 transition-colors"
                     >
                       <ExternalLink size={16} className="mr-1" />
                       Live Demo
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -640,25 +664,80 @@ const Portfolio: React.FC = () => {
         </div>
       </section>
 
-      {/* DEAR FUTURE EMPLOYER SECTION */}
-      {/* add padding above image */}
-
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 bg-slate-800/50">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-            Let&apos;s Work Together
+        <div className="max-w-4xl mx-auto  space-y-4">
+          <h2 className="text-4xl text-center font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            {/* Let&apos;s Work Together */}
+            Dear future employer,
           </h2>
           {/* <h3 className="text-2xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             Dear future employer,
           </h3> */}
-          <p className="text-xl text-slate-300 mb-12 leading-relaxed">
-            I&apos;m always interested in new opportunities and exciting projects.
-            Let&apos;s connect and discuss how we can create something amazing
-            together.
+          <p className=" ">
+            If you&apos;ve made it this far, thank you. You've likely seen the
+            projects, the code, and the case studies, and now you&apos;re
+            looking for the person behind them — so here I am.
           </p>
+          {/* <p className="text-xl text-slate-300 mb-12 leading-relaxed">
+            I&apos;m always interested in new opportunities and exciting
+            projects. Let&apos;s connect and discuss how we can create something
+            amazing together.
+          </p> */}
+          <p className="">
+            Let&apos;s skip the boilerplate. What I bring to the table is a
+            proven ability to deliver tangible impact. You're not just hiring
+            someone to just maintain the status quo; you&apos;re hiring a
+            problem-solver who sees a roadmap.
+          </p>
+          <p className="">
+            For instance, I&apos;m particularly proud of{" "}
+            <span className="text-bold">
+              re-architecting the checkout flow for Goldies Application, which
+              increased conversion by 15%.
+            </span>
+            This isn't just a bullet point; it shows I don't settle for "good
+            enough" when "great" is achievable. My approach is always rooted in
+            the belief that the best solutions are the ones that are both
+            technically robust and genuinely helpful to the user.
+          </p>
+          <h3 className=" text-center text-2xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            What You Can Expect from Me
+          </h3>
+          <ul>
+            <li>
+              <span className="text-blue-400 mr-2">•</span>A Proactive Partner
+              &#129303;
+            </li>
+            <li>
+              <span className="text-blue-400 mr-2">•</span>A Focus on the "Why"
+              &#129300;
+            </li>
+            <li>
+              <span className="text-blue-400 mr-2">•</span>
+              Unflappable Energy &#128170;
+            </li>
+          </ul>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          {/* <p className="">You've seen the portfolio, now let’s talk about the impact.
+          What I bring to your project isn't just a skillset; it’s a proven ability to deliver tangible, measurable results. I don’t just handle tasks; I solve the underlying problems. Case in point: [Insert your best, single, quantifiable achievement here, e.g., "re-architecting the checkout flow, which boosted conversion by 15%"].
+          That achievement is just one example of how I approach every challenge: with proactive energy and a focus on both technical excellence and genuine user value. My goal is simple: to be the partner who seeks out the issues, proposes robust solutions, and elevates the entire product.
+          You’re getting a resourceful team player who loves this work and is eager to jump into your biggest challenges. I'm ready to help you achieve something outstanding.
+          Looking forward to our conversation.
+          </p> */}
+          <p className="">
+            I&apos;m eager to take on your biggest challenges and contribute to
+            a project I can be proud of. My aim is simple: to bring my unique
+            blend of technical expertise and human-centered strategy to your
+            mission and help us both achieve something truly outstanding.
+          </p>
+          <p className="">
+            I look forward to discussing how I can deliver impact on your team.
+            Cheers
+          </p>
+          <p className="">TSO🚀</p>
+
+          <div className=" text-center grid md:grid-cols-3 gap-8 mb-12">
             <div className="p-6 bg-slate-800 rounded-lg border border-slate-700">
               <Mail size={32} className="mx-auto mb-4 text-blue-400" />
               <h3 className="font-semibold mb-2">Email</h3>
@@ -682,13 +761,13 @@ const Portfolio: React.FC = () => {
             </div>
           </div>
 
-          <a
+          <Link
             href="mailto:oyewaletaiwo1803@gmail.com"
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-medium text-lg hover:shadow-lg hover:scale-105 transition-all duration-300"
           >
             <Mail size={20} className="mr-2" />
             Get In Touch
-          </a>
+          </Link>
         </div>
       </section>
 
