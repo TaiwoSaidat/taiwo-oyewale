@@ -354,9 +354,13 @@ const Portfolio: React.FC = () => {
               </div>
             </div>
           </div>
-          <h1 className="text-4xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+          {/* <div className="  border-2 "> */}
+          <h1 className="text-4xl md:text-7xl font-bold leading-relaxed mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
             Taiwo Oyewale
           </h1>
+          {/* </div> */}
+
+          {/* <h1 className=" text-4xl ">Taiwo Oyewale</h1> */}
 
           <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
             Frontend Developer crafting exceptional digital experiences
@@ -383,14 +387,13 @@ const Portfolio: React.FC = () => {
             </button>
           </div>
 
-          <div className="flex justify-center flex-wrap gap-4 px-6 border-2">
+          <div className="flex justify-center flex-wrap gap-4 px-4">
             <Link
               href="https://github.com/TaiwoSaidat"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors group"
             >
-              {" "}
               <Github
                 size={24}
                 className="group-hover:text-blue-400 transition-colors"
@@ -551,9 +554,9 @@ const Portfolio: React.FC = () => {
                     {skillGroup.category}
                   </h4>
                   <div className="flex flex-wrap gap-2">
-                    {skillGroup.skills.map((skill, skillIndex) => (
+                    {skillGroup.skills.map((skill, _) => (
                       <span
-                        key={skillIndex}
+                        key={skill}
                         className="px-3 py-1 bg-slate-700 text-sm rounded-full text-slate-300"
                       >
                         {skill}
