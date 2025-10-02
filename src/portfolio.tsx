@@ -81,9 +81,9 @@ const Portfolio: React.FC = () => {
       id: 1,
       title: "Goldies Application",
       description:
-        "Collaborated in an ecommerce app suitable for sales of baked goods",
+        "Collaborated in an e-commerce app suitable for sales of baked goods",
       tech: ["Next.js", "TypeScript", "REST APIs", "ShadCN", "SCSS"],
-      github: "",
+      github: "https://goldies-frontend-v3.vercel.app/",
       demo: "https://goldies-frontend-v3.vercel.app/",
       image: goldies.src,
     },
@@ -99,9 +99,9 @@ const Portfolio: React.FC = () => {
     },
     {
       id: 3,
-      title: "Post Craft App",
+      title: "Post Craft Application",
       description:
-        "This is a CRUD app displaying blog posts. Each post has a title, Date post was made, and a preview. Clicking on each post navigates to a full page showing details on the post. Features include add, delete, like, dislike and edit posts. App also displays the no of likes a post garners",
+        "This is a CRUD app displaying blog posts. Each post has a title, date created by, number of likes, and a preview. Clicking on each post navigates to a pop-up showing the full post. Features include add, delete, like, dislike and edit posts.",
       tech: ["ReactJS", "Firebase", "Tailwind"],
       github: "https://github.com/TaiwoSaidat/Simple-Blog-Website",
       demo: "https://simple-blog-website-eta.vercel.app/",
@@ -109,9 +109,9 @@ const Portfolio: React.FC = () => {
     },
     {
       id: 4,
-      title: "Beauty Expat App",
+      title: "Beauty Expat Application",
       description:
-        "This is an app that connect small business beauty technicians to customers. Features include sign in and sign up for experts and customers, display previous projects for experts, customer booking system. ",
+        "This is an app that connects small business beauty technicians to customers. Features include sign in and sign up for experts and customers, customer booking system, and display for previous projects for experts. ",
       tech: ["React", "Tailwind", "SCSS"],
       github: "",
       demo: "https://simple-blog-website-eta.vercel.app/",
@@ -119,9 +119,9 @@ const Portfolio: React.FC = () => {
     },
     {
       id: 5,
-      title: "Kiddies Auto App",
+      title: "Kiddies Auto Application",
       description:
-        "This is an ecommerce store built. It displays a list of available products with pricing, description and image. Features include prodct display and payment system ",
+        "This is an e-commerce store built. It displays a list of available products with pricing, description and image. Features include product display and payment system ",
       tech: ["Reactjs", "Typescript", "Tailwind", "CSS", "HTML"],
       github: "https://github.com/TaiwoSaidat/Kiddies-Auto-Web-App",
       demo: "https://kiddies-auto-web-app.vercel.app/",
@@ -139,12 +139,12 @@ const Portfolio: React.FC = () => {
     },
     {
       id: 6,
-      title: "Job Listings App",
+      title: "Job Listings Application",
       description:
         "This is a job listings app to display a list of job postings. Each job listing has a title, company name, and description. Clicking a job navigates to a detailed job page which displays the full details of the job. Other features include search for filtering, load more and a form where users can submit new job listings display.",
       tech: ["Next", "Typescript", "Tailwind", "SCSS"],
       github: "https://github.com/TaiwoSaidat/tech-jobs-listings-app",
-      demo: "https://kiddies-auto-web-app.vercel.app/",
+      demo: "https://tech-jobs-listings-app.vercel.app/",
       image: job.src,
     },
     // {
@@ -159,46 +159,69 @@ const Portfolio: React.FC = () => {
     // },
     {
       id: 8,
-      title: "Quiz App",
+      title: "Quiz Application",
       description:
         "This is a quiz application that displays questions and give a score at the end of the quiz.",
       tech: ["React JS", "HTML", "Tailwind", "CSS"],
       github: "https://github.com/TaiwoSaidat/Quiz_Application/",
-      demo: "https://kiddies-auto-web-app.vercel.app/",
+      demo: "https://quiz-application-plum.vercel.app/",
       image: quizApp.src,
     },
     {
-      id: 9,
-      title: "Wanderlay App",
-      description:
-        "This is the landing page of a travel companyit&apos;ss website.",
-      tech: ["NextJS", "Typescript", "HTML", "Tailwind", "CSS"],
-      github: "https://github.com/TaiwoSaidat/wanderlay-travel-app/",
-      demo: "https://wanderlay-travel-app.vercel.app/",
-      image: wanderlay.src,
-    },
-    {
       id: 10,
-      title: "Tech Start Up App",
+      title: "Tech Start Up Application",
       description:
-        "This is the landing page of a Software Development business&apos;s website.",
+        "This is a business website for a Software Development start up.",
       tech: ["NextJS", "Typescript", "Tailwind", "HTML", "CSS"],
       github: "https://github.com/TaiwoSaidat/tech-start-up-app/",
       demo: "https://tech-start-up-app.vercel.app/",
       image: tsu.src,
+    },
+    {
+      id: 9,
+      title: "Wanderlay Application",
+      description: `This is the landing page of a travel company's website.`,
+      tech: ["NextJS", "Typescript", "HTML", "Tailwind", "CSS"],
+      github: "https://github.com/TaiwoSaidat/wanderlay-travel-app/",
+      demo: "https://wanderlay-travel-app.vercel.app/",
+      image: wanderlay.src,
     },
   ];
 
   const experiences: Experience[] = [
     {
       id: 1,
-      company: "i-Sentry Technologies",
+      company: "Freelance Projects",
       position: "Frontend Developer",
+      duration: "2025 - Present",
+      description: [
+        "Convert Figma wireframes into pixel-perfect, accessible, and cross-browser compatible UIs, ensuring WCAG compliance and mobile-first design",
+        "Implement performance optimizations (code splitting, lazy loading, caching), cutting page load times by 40% and boosting Lighthouse scores.",
+        "Deliver features in agile sprints, increasing client satisfaction and securing repeat projects.",
+      ],
+      tech: [
+        "React.js",
+        "Next.js",
+        "Typescript",
+        "REST APIs",
+        "Tailwind CSS",
+        "JavaScript (ES6+)",
+        "Redux",
+        "Zustand",
+        "React Query",
+        "ShadCN",
+        "SCSS",
+      ],
+    },
+    {
+      id: 2,
+      company: "i-Sentry Technologies",
+      position: "Frontend Developer | Intern",
       duration: "2024 - 2025",
       description: [
         "Integrated paystack payment API, streamlining the checkout process and ensuring compliance with fintech security standards.",
         "Engineered authentication flow reducing customer onboarding time by 30% and strengthening data security.",
-        "Engineered the product page with category filtering, sorting and dynamic rendering",
+        "Architected the product page with category filtering, sorting and dynamic rendering",
         "Redesigned and implemented core navigation and footer components, reducing navigation errors by 20% and improving user engagement",
       ],
       tech: [
@@ -215,13 +238,13 @@ const Portfolio: React.FC = () => {
       ],
     },
     {
-      id: 2,
+      id: 3,
       company: "Tech4Dev",
       position: "Frontend Developer | Fellow",
       duration: "2023 - 2024",
       description: [
         "Built booking and scheduling system, improving efficiency and reducing missed appointments.",
-        "Engineered the onboarding and authentication system, accelerating sign-ups by 40% and boosting platform adoption.",
+        "Engineered and optimised the onboarding and authentication system, accelerating sign-ups by 40% and boosting platform adoption.",
         "Authored and deployed customer support and service pages, reducing support requests by 25% andimproving user satisfaction.",
       ],
       tech: ["Reactjs", "SASS", "Tailwind", "CSS", "JavaScript", "HTML5"],
@@ -234,7 +257,7 @@ const Portfolio: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 text-white">
+    <div className="min-h-screen  bg-slate-900 text-white  ">
       {/* Navigation */}
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -245,12 +268,12 @@ const Portfolio: React.FC = () => {
       >
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex justify-between items-center h-16">
-            <div className=" flex gap-2 text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              <Link href="/" className="flex items-center">
+            <div className="  flex justify-between gap-2 text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+              <Link href="/" className="flex items-center ">
                 <p className="">Taiwo Oyewale</p>
               </Link>
 
-              <div className=" items-center flex">
+              <div className=" items-center  flex ">
                 <Link
                   href="/Taiwo_Oyewale_Resume_Frontend_Engineer.pdf"
                   target="_blank"
@@ -331,7 +354,7 @@ const Portfolio: React.FC = () => {
               </div>
             </div>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
             Taiwo Oyewale
           </h1>
 
@@ -360,7 +383,7 @@ const Portfolio: React.FC = () => {
             </button>
           </div>
 
-          <div className="flex justify-center space-x-6">
+          <div className="flex justify-center flex-wrap gap-4 px-6 border-2">
             <Link
               href="https://github.com/TaiwoSaidat"
               target="_blank"
@@ -566,7 +589,7 @@ const Portfolio: React.FC = () => {
                       {exp.company}
                     </h4>
                   </div>
-                  <span className="text-sm text-slate-400 bg-slate-700 px-3 py-1 rounded-full">
+                  <span className="text-sm text-slate-400 bg-slate-700 px-3 py-1 rounded-full w-fit">
                     {exp.duration}
                   </span>
                 </div>
@@ -675,8 +698,8 @@ const Portfolio: React.FC = () => {
             Dear future employer,
           </h3> */}
           <p className=" ">
-            If you&apos;ve made it this far, thank you. You've likely seen the
-            projects, the code, and the case studies, and now you&apos;re
+            If you&apos;ve made it this far, thank you. You&apos;ve likely seen
+            the projects, the code, and the case studies, and now you&apos;re
             looking for the person behind them — so here I am.
           </p>
           {/* <p className="text-xl text-slate-300 mb-12 leading-relaxed">
@@ -686,8 +709,8 @@ const Portfolio: React.FC = () => {
           </p> */}
           <p className="">
             Let&apos;s skip the boilerplate. What I bring to the table is a
-            proven ability to deliver tangible impact. You're not just hiring
-            someone to just maintain the status quo; you&apos;re hiring a
+            proven ability to deliver tangible impact. You&apos;re not just
+            hiring someone to just maintain the status quo; you&apos;re hiring a
             problem-solver who sees a roadmap.
           </p>
           <p className="">
@@ -696,10 +719,11 @@ const Portfolio: React.FC = () => {
               re-architecting the checkout flow for Goldies Application, which
               increased conversion by 15%.
             </span>
-            This isn't just a bullet point; it shows I don't settle for "good
-            enough" when "great" is achievable. My approach is always rooted in
-            the belief that the best solutions are the ones that are both
-            technically robust and genuinely helpful to the user.
+            This isn&apos;t just a bullet point; it shows I don&apos;t settle
+            for &quot;good enough&quot; when &quot;great&quot; is achievable. My
+            approach is always rooted in the belief that the best solutions are
+            the ones that are both technically robust and genuinely helpful to
+            the user.
           </p>
           <h3 className=" text-center text-2xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             What You Can Expect from Me
@@ -710,8 +734,8 @@ const Portfolio: React.FC = () => {
               &#129303;
             </li>
             <li>
-              <span className="text-blue-400 mr-2">•</span>A Focus on the "Why"
-              &#129300;
+              <span className="text-blue-400 mr-2">•</span>A Focus on the
+              &quot;Why&quot; &#129300;
             </li>
             <li>
               <span className="text-blue-400 mr-2">•</span>
