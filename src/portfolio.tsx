@@ -354,13 +354,9 @@ const Portfolio: React.FC = () => {
               </div>
             </div>
           </div>
-          {/* <div className="  border-2 "> */}
           <h1 className="text-4xl md:text-7xl font-bold leading-relaxed mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
             Taiwo Oyewale
           </h1>
-          {/* </div> */}
-
-          {/* <h1 className=" text-4xl ">Taiwo Oyewale</h1> */}
 
           <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
             Frontend Developer crafting exceptional digital experiences
