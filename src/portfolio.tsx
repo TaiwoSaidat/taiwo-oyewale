@@ -114,7 +114,7 @@ const Portfolio: React.FC = () => {
         "This is an app that connects small business beauty technicians to customers. Features include sign in and sign up for experts and customers, customer booking system, and display for previous projects for experts. ",
       tech: ["React", "Tailwind", "SCSS"],
       github: "",
-      demo: "https://simple-blog-website-eta.vercel.app/",
+      demo: "https://beautyxpert.netlify.app/",
       image: beauty.src,
     },
     {
