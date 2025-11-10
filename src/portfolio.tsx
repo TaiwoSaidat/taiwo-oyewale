@@ -26,6 +26,7 @@ import job from "../public/jobPosts.png";
 import quizApp from "../public/quiz_app.png";
 import wanderlay from "../public/wanderlay.png";
 import tsu from "../public/TSU.png";
+import events from "../public/events.png";
 import Link from "next/link";
 
 interface Project {
@@ -126,6 +127,16 @@ const Portfolio: React.FC = () => {
       github: "https://github.com/TaiwoSaidat/Kiddies-Auto-Web-App",
       demo: "https://kiddies-auto-web-app.vercel.app/",
       image: kiddies.src,
+    },
+    {
+      id: 12,
+      title: "Event Nest Application",
+      description:
+        "An app showcasing upcoming events in the neighborhood, for humans and their pets.",
+      tech: ["Next.js", "TypeScript", "SCSS", " Fetch Api"],
+      github: "https://github.com/TaiwoSaidat/event-nest",
+      demo: "hhttps://event-nest-eta.vercel.app/",
+      image: events.src,
     },
     {
       id: 11,
