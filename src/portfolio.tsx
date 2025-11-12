@@ -227,7 +227,7 @@ const Portfolio: React.FC = () => {
     {
       id: 2,
       company: "i-Sentry Technologies",
-      position: "Frontend Developer | Intern",
+      position: "Frontend Developer",
       duration: "2024 - 2025",
       description: [
         "Integrated paystack payment API, streamlining the checkout process and ensuring compliance with fintech security standards.",
