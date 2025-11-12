@@ -98,16 +98,16 @@ const Portfolio: React.FC = () => {
       demo: "https://finloop-app.vercel.app/",
       image: finloop.src,
     },
-    {
-      id: 3,
-      title: "Post Craft Application",
-      description:
-        "This is a CRUD app displaying blog posts. Each post has a title, date created by, number of likes, and a preview. Clicking on each post navigates to a pop-up showing the full post. Features include add, delete, like, dislike and edit posts.",
-      tech: ["ReactJS", "Firebase", "Tailwind"],
-      github: "https://github.com/TaiwoSaidat/Simple-Blog-Website",
-      demo: "https://simple-blog-website-eta.vercel.app/",
-      image: blog.src,
-    },
+    // {
+    //   id: 3,
+    //   title: "Post Craft Application",
+    //   description:
+    //     "This is a CRUD app displaying blog posts. Each post has a title, date created by, number of likes, and a preview. Clicking on each post navigates to a pop-up showing the full post. Features include add, delete, like, dislike and edit posts.",
+    //   tech: ["ReactJS", "Firebase", "Tailwind"],
+    //   github: "https://github.com/TaiwoSaidat/Simple-Blog-Website",
+    //   demo: "https://simple-blog-website-eta.vercel.app/",
+    //   image: blog.src,
+    // },
     {
       id: 4,
       title: "Beauty Expat Application",
@@ -135,7 +135,7 @@ const Portfolio: React.FC = () => {
         "An app showcasing upcoming events in the neighborhood, for humans and their pets.",
       tech: ["Next.js", "TypeScript", "SCSS", " Fetch Api"],
       github: "https://github.com/TaiwoSaidat/event-nest",
-      demo: "hhttps://event-nest-eta.vercel.app/",
+      demo: "https://event-nest-eta.vercel.app/",
       image: events.src,
     },
     {
@@ -148,16 +148,16 @@ const Portfolio: React.FC = () => {
       demo: "https://billia-app.vercel.app/",
       image: billia.src,
     },
-    {
-      id: 6,
-      title: "Job Listings Application",
-      description:
-        "This is a job listings app to display a list of job postings. Each job listing has a title, company name, and description. Clicking a job navigates to a detailed job page which displays the full details of the job. Other features include search for filtering, load more and a form where users can submit new job listings display.",
-      tech: ["Next", "Typescript", "Tailwind", "SCSS"],
-      github: "https://github.com/TaiwoSaidat/tech-jobs-listings-app",
-      demo: "https://tech-jobs-listings-app.vercel.app/",
-      image: job.src,
-    },
+    // {
+    //   id: 6,
+    //   title: "Job Listings Application",
+    //   description:
+    //     "This is a job listings app to display a list of job postings. Each job listing has a title, company name, and description. Clicking a job navigates to a detailed job page which displays the full details of the job. Other features include search for filtering, load more and a form where users can submit new job listings display.",
+    //   tech: ["Next", "Typescript", "Tailwind", "SCSS"],
+    //   github: "https://github.com/TaiwoSaidat/tech-jobs-listings-app",
+    //   demo: "https://tech-jobs-listings-app.vercel.app/",
+    //   image: job.src,
+    // },
     // {
     //   id: 7,
     //   title: "Feedback App",
@@ -168,35 +168,35 @@ const Portfolio: React.FC = () => {
     //   demo: "https://kiddies-auto-web-app.vercel.app/",
     //   image: tsu.src,
     // },
-    {
-      id: 8,
-      title: "Quiz Application",
-      description:
-        "This is a quiz application that displays questions and give a score at the end of the quiz.",
-      tech: ["React JS", "HTML", "Tailwind", "CSS"],
-      github: "https://github.com/TaiwoSaidat/Quiz_Application/",
-      demo: "https://quiz-application-plum.vercel.app/",
-      image: quizApp.src,
-    },
-    {
-      id: 10,
-      title: "Tech Start Up Application",
-      description:
-        "This is a business website for a Software Development start up.",
-      tech: ["NextJS", "Typescript", "Tailwind", "HTML", "CSS"],
-      github: "https://github.com/TaiwoSaidat/tech-start-up-app/",
-      demo: "https://tech-start-up-app.vercel.app/",
-      image: tsu.src,
-    },
-    {
-      id: 9,
-      title: "Wanderlay Application",
-      description: `This is the landing page of a travel company's website.`,
-      tech: ["NextJS", "Typescript", "HTML", "Tailwind", "CSS"],
-      github: "https://github.com/TaiwoSaidat/wanderlay-travel-app/",
-      demo: "https://wanderlay-travel-app.vercel.app/",
-      image: wanderlay.src,
-    },
+    // {
+    //   id: 8,
+    //   title: "Quiz Application",
+    //   description:
+    //     "This is a quiz application that displays questions and give a score at the end of the quiz.",
+    //   tech: ["React JS", "HTML", "Tailwind", "CSS"],
+    //   github: "https://github.com/TaiwoSaidat/Quiz_Application/",
+    //   demo: "https://quiz-application-plum.vercel.app/",
+    //   image: quizApp.src,
+    // },
+    // {
+    //   id: 10,
+    //   title: "Tech Start Up Application",
+    //   description:
+    //     "This is a business website for a Software Development start up.",
+    //   tech: ["NextJS", "Typescript", "Tailwind", "HTML", "CSS"],
+    //   github: "https://github.com/TaiwoSaidat/tech-start-up-app/",
+    //   demo: "https://tech-start-up-app.vercel.app/",
+    //   image: tsu.src,
+    // },
+    // {
+    //   id: 9,
+    //   title: "Wanderlay Application",
+    //   description: `This is the landing page of a travel company's website.`,
+    //   tech: ["NextJS", "Typescript", "HTML", "Tailwind", "CSS"],
+    //   github: "https://github.com/TaiwoSaidat/wanderlay-travel-app/",
+    //   demo: "https://wanderlay-travel-app.vercel.app/",
+    //   image: wanderlay.src,
+    // },
   ];
 
   const experiences: Experience[] = [
@@ -382,13 +382,13 @@ const Portfolio: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <button
               onClick={() => scrollToSection("projects")}
-              className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300"
+              className="px-8 py-3 cursor-pointer bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300"
             >
               View My Work
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="px-8 py-3 border border-slate-600 rounded-full font-medium hover:bg-slate-800 hover:scale-105 transition-all duration-300"
+              className="px-8 py-3 cursor-pointer border border-slate-600 rounded-full font-medium hover:bg-slate-800 hover:scale-105 transition-all duration-300"
             >
               Get In Touch
             </button>
