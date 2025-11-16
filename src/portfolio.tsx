@@ -252,13 +252,13 @@ const Portfolio: React.FC = () => {
     {
       id: 2,
       company: "i-Sentry Technologies",
-      position: "Frontend Developer",
+      position: "Frontend Engineer",
       duration: "2024 - 2025",
       description: [
         "Architected frontend features (including auth flow, checkout flow, shop, user pages) for an e-commerce app enhancing user experience by 80%.",
         "Consumed Rest API ensuring seamless backend integration.",
         "Conducted testing, identifying and documenting bugs via Jira for quick turnaround fixes improving page load times by 78%.",
-        "●	Converted figma to responsive pixel perfect designs improving Lighthouse scores to 95%,",
+        "Converted figma to responsive pixel perfect designs improving Lighthouse scores to 95%,",
       ],
       tech: [
         "Typescript",
@@ -277,7 +277,7 @@ const Portfolio: React.FC = () => {
     {
       id: 3,
       company: "Tech4Dev",
-      position: "Frontend Developer | Fellow",
+      position: "Frontend Engineer | Fellow",
       duration: "2023 - 2024",
       description: [
         "Developed a beauty marketplace to connecting beauticians with clients.",
