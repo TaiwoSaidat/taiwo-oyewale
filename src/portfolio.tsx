@@ -246,6 +246,7 @@ const Portfolio: React.FC = () => {
         "React Query",
         "ShadCN",
         "SCSS",
+        "Jest",
       ],
     },
     {
@@ -270,6 +271,7 @@ const Portfolio: React.FC = () => {
         "React Query",
         "ShadCN",
         "SCSS / SASS",
+        "Jest",
       ],
     },
     {
@@ -400,8 +402,8 @@ const Portfolio: React.FC = () => {
 
           <p className="text-lg text-slate-400 mb-12 max-w-2xl mx-auto">
             Passionate about building scalable applications with modern
-            technologies. Specialized in Next.js, Typescript, Tailwind, and API
-            integration.
+            technologies. Specialized in Next.js, Typescript, Tailwind, State
+            Management, API integration and Jest.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 overflow-y-scroll [&::-webkit-scrollbar]:hidden scrollbar-none">
@@ -560,6 +562,7 @@ const Portfolio: React.FC = () => {
                   skills: [
                     "Firebase/Firestore",
                     "Postman",
+                    "Jest",
                     "Git",
                     "GitHub",
                     "Figma",
