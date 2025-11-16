@@ -285,7 +285,7 @@ const Portfolio: React.FC = () => {
         "Implemented performance optimizations (code splitting, lazy loading, caching), cutting page load times by 40% and boosting Lighthouse scores.",
         "Collaborated in a cross-functional team working in an Agile environment to present MVP in a timely manner.",
       ],
-      tech: ["Reactjs", "SASS", "Tailwind", "CSS", "JavaScript", "HTML5"],
+      tech: ["Reactjs", "SCSS/SASS", "Tailwind", "CSS", "JavaScript", "HTML5"],
     },
   ];
 
