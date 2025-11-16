@@ -82,9 +82,19 @@ const Portfolio: React.FC = () => {
       id: 1,
       title: "Goldies Application",
       description:
-        "Collaborated in an e-commerce app suitable for sales of baked goods",
-      tech: ["Next.js", "TypeScript", "REST APIs", "ShadCN", "SCSS"],
-      github: "https://goldies-frontend-v3.vercel.app/",
+        // "Collaborated in an e-commerce app suitable for sales of baked goods",
+        "A high-performance e-commerce solution for specialty baked goods, featuring a robust, three-tier Role-Based Access Control (User, Admin, Super Admin) and optimized for seamless transactions and inventory management.",
+      tech: [
+        "Next.js",
+        "TypeScript",
+        "API Integration",
+        "State management(Redux, Zustand)",
+        "React Query",
+        "ShadCN",
+        "SCSS",
+        "Jest",
+      ],
+      github: "https://github.com/idyWilliams/goldies_frontend/",
       demo: "https://goldies-frontend-v3.vercel.app/",
       image: goldies.src,
     },
@@ -92,29 +102,30 @@ const Portfolio: React.FC = () => {
       id: 2,
       title: "Finloop Application",
       description:
-        "Developed an admin dashboard app suitable for loan management app.",
-      tech: ["Next.js", "TypeScript", "REST APIs", "ShadCN", "SCSS"],
+        // "Developed an admin dashboard app suitable for loan management app.",
+        "A robust, high-efficiency administrative dashboard built for a loan management system, designed to give administrators and loan officers a single, streamlined interface for processing, approving, and tracking high-volume financial data.",
+      tech: [
+        "Next.js",
+        "TypeScript",
+        "API Integration",
+        "Tanstack",
+        "ShadCN",
+        "React Hook + Yup Resolver",
+        "SCSS",
+      ],
       github: "https://github.com/TaiwoSaidat/finloop-app",
       demo: "https://finloop-app.vercel.app/",
       image: finloop.src,
     },
-    // {
-    //   id: 3,
-    //   title: "Post Craft Application",
-    //   description:
-    //     "This is a CRUD app displaying blog posts. Each post has a title, date created by, number of likes, and a preview. Clicking on each post navigates to a pop-up showing the full post. Features include add, delete, like, dislike and edit posts.",
-    //   tech: ["ReactJS", "Firebase", "Tailwind"],
-    //   github: "https://github.com/TaiwoSaidat/Simple-Blog-Website",
-    //   demo: "https://simple-blog-website-eta.vercel.app/",
-    //   image: blog.src,
-    // },
     {
       id: 4,
-      title: "Beauty Expat Application",
+      title: "Beauty Expert Application",
       description:
-        "This is an app that connects small business beauty technicians to customers. Features include sign in and sign up for experts and customers, customer booking system, and display for previous projects for experts. ",
-      tech: ["React", "Tailwind", "SCSS"],
-      github: "",
+        // "This is an app that connects small business beauty technicians to customers. Features include sign in and sign up for experts and customers, customer booking system, and display for previous projects for experts. ",
+        "A responsive, feature-rich service marketplace designed to empower local beauty professionals and simplify the booking process for customers.",
+      tech: ["React", "Javascript", "React Router", "Tailwind", "SCSS"],
+
+      github: "https://github.com/Lahitan/beautyexpert/",
       demo: "https://beautyxpert.netlify.app/",
       image: beauty.src,
     },
@@ -122,14 +133,15 @@ const Portfolio: React.FC = () => {
       id: 5,
       title: "Kiddies Auto Application",
       description:
-        "This is an e-commerce store built. It displays a list of available products with pricing, description and image. Features include product display and payment system ",
+        // "An e-commerce store built. It displays a list of available products with pricing, description and image. Features include product display and payment system ",
+        "A foundational e-commerce store frontend built for speed and maintainability. It features dynamic product listings (including pricing, descriptions, and imagery) and integrates a clean payment workflow simulation.",
       tech: ["Reactjs", "Typescript", "Tailwind", "CSS", "HTML"],
       github: "https://github.com/TaiwoSaidat/Kiddies-Auto-Web-App",
       demo: "https://kiddies-auto-web-app.vercel.app/",
       image: kiddies.src,
     },
     {
-      id: 12,
+      id: 11,
       title: "Event Nest Application",
       description:
         "An app showcasing upcoming events in the neighborhood, for humans and their pets.",
@@ -139,10 +151,11 @@ const Portfolio: React.FC = () => {
       image: events.src,
     },
     {
-      id: 11,
+      id: 12,
       title: "Billia Application",
       description:
-        "Developed an app suitable for sorting and payment of bills.",
+        // "Developed an app suitable for sorting and payment of bills.",
+        "a focused, single-purpose application designed to streamline the chaotic process of bill management",
       tech: ["Next.js", "TypeScript", "ShadCN", "SCSS"],
       github: "https://github.com/TaiwoSaidat/billia-app",
       demo: "https://billia-app.vercel.app/",
@@ -197,18 +210,29 @@ const Portfolio: React.FC = () => {
     //   demo: "https://wanderlay-travel-app.vercel.app/",
     //   image: wanderlay.src,
     // },
+    // {
+    //   id: 3,
+    //   title: "Post Craft Application",
+    //   description:
+    //     "This is a CRUD app displaying blog posts. Each post has a title, date created by, number of likes, and a preview. Clicking on each post navigates to a pop-up showing the full post. Features include add, delete, like, dislike and edit posts.",
+    //   tech: ["ReactJS", "Firebase", "Tailwind"],
+    //   github: "https://github.com/TaiwoSaidat/Simple-Blog-Website",
+    //   demo: "https://simple-blog-website-eta.vercel.app/",
+    //   image: blog.src,
+    // },
   ];
 
   const experiences: Experience[] = [
     {
       id: 1,
       company: "Freelance Projects",
-      position: "Frontend Developer",
+      position: "Frontend Engineer",
       duration: "2025 - Present",
       description: [
-        "Convert Figma wireframes into pixel-perfect, accessible, and cross-browser compatible UIs, ensuring WCAG compliance and mobile-first design",
-        "Implement performance optimizations (code splitting, lazy loading, caching), cutting page load times by 40% and boosting Lighthouse scores.",
-        "Deliver features in agile sprints, increasing client satisfaction and securing repeat projects.",
+        "Led front-end efforts by building frontend features for company sites improving lead generation and online visibility by 70%.",
+        "Optimised company websites cutting page load times by 40% and boosting Lighthouse scores by 60%.",
+        "Worked with clients to ascertain their needs to develop and optimize responsive applications, ",
+        "Delivered features in agile sprints, increasing client satisfaction and securing repeat projects.",
       ],
       tech: [
         "React.js",
@@ -230,10 +254,10 @@ const Portfolio: React.FC = () => {
       position: "Frontend Developer",
       duration: "2024 - 2025",
       description: [
-        "Integrated paystack payment API, streamlining the checkout process and ensuring compliance with fintech security standards.",
-        "Engineered authentication flow reducing customer onboarding time by 30% and strengthening data security.",
-        "Architected the product page with category filtering, sorting and dynamic rendering",
-        "Redesigned and implemented core navigation and footer components, reducing navigation errors by 20% and improving user engagement",
+        "Architected frontend features (including auth flow, checkout flow, shop, user pages) for an e-commerce app enhancing user experience by 80%.",
+        "Consumed Rest API ensuring seamless backend integration.",
+        "Conducted testing, identifying and documenting bugs via Jira for quick turnaround fixes improving page load times by 78%.",
+        "●	Converted figma to responsive pixel perfect designs improving Lighthouse scores to 95%,",
       ],
       tech: [
         "Typescript",
@@ -254,9 +278,10 @@ const Portfolio: React.FC = () => {
       position: "Frontend Developer | Fellow",
       duration: "2023 - 2024",
       description: [
-        "Built booking and scheduling system, improving efficiency and reducing missed appointments.",
-        "Engineered and optimised the onboarding and authentication system, accelerating sign-ups by 40% and boosting platform adoption.",
-        "Authored and deployed customer support and service pages, reducing support requests by 25% andimproving user satisfaction.",
+        "Developed a beauty marketplace to connecting beauticians with clients.",
+        "Converted Figma wireframes into pixel-perfect, accessible, and cross-browser compatible UIs, ensuring mobile-first design.",
+        "Implemented performance optimizations (code splitting, lazy loading, caching), cutting page load times by 40% and boosting Lighthouse scores.",
+        "Collaborated in a cross-functional team working in an Agile environment to present MVP in a timely manner.",
       ],
       tech: ["Reactjs", "SASS", "Tailwind", "CSS", "JavaScript", "HTML5"],
     },
@@ -279,7 +304,7 @@ const Portfolio: React.FC = () => {
       >
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex justify-between items-center h-16">
-            <div className="  flex justify-between gap-2 text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <div className="  flex justify-between gap-2 text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
               <Link href="/" className="flex items-center ">
                 <p className="">Taiwo Oyewale</p>
               </Link>
@@ -379,10 +404,10 @@ const Portfolio: React.FC = () => {
             integration.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 overflow-y-scroll [&::-webkit-scrollbar]:hidden scrollbar-none">
             <button
               onClick={() => scrollToSection("projects")}
-              className="px-8 py-3 cursor-pointer bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300"
+              className="px-8 py-3 cursor-pointer bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300 animate-pulse"
             >
               View My Work
             </button>
@@ -393,13 +418,13 @@ const Portfolio: React.FC = () => {
               Get In Touch
             </button>
           </div>
-
-          <div className="flex justify-center flex-wrap gap-4 px-4">
+          {/* social media links */}
+          <div className="flex justify-center flex-wrap gap-4 p-4 ">
             <Link
               href="https://github.com/TaiwoSaidat"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors group"
+              className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 hover:scale-115 transition-all duration-300 group"
             >
               <Github
                 size={24}
@@ -410,7 +435,7 @@ const Portfolio: React.FC = () => {
               href="https://www.linkedin.com/in/taiwo-oyewale199/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors group"
+              className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 hover:scale-115 transition-all duration-300 group"
             >
               <Linkedin
                 size={24}
@@ -421,7 +446,7 @@ const Portfolio: React.FC = () => {
               href="/Taiwo_Oyewale_Resume_Frontend_Engineer.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors group"
+              className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 hover:scale-115 transition-all duration-300 group"
             >
               <FileType
                 size={24}
@@ -432,7 +457,7 @@ const Portfolio: React.FC = () => {
               href="https://medium.com/@oyewaletaiwo1803"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors group"
+              className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 hover:scale-115 transition-all duration-300 group"
             >
               <SiMedium
                 size={24}
@@ -443,7 +468,7 @@ const Portfolio: React.FC = () => {
               href="mailto:oyewaletaiwo1803@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors group"
+              className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 hover:scale-115 transition-all duration-300 group"
             >
               <Mail
                 size={24}
@@ -454,7 +479,7 @@ const Portfolio: React.FC = () => {
               href="https://wa.me/+2348145701901"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors group"
+              className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 hover:scale-115 transition-all duration-300 group"
             >
               <PiWhatsappLogoLight
                 size={24}
@@ -633,13 +658,13 @@ const Portfolio: React.FC = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 px-6">
+      <section id="projects" className="py-20 px-6 ">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             Featured Projects
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-y-scroll [&::-webkit-scrollbar]:hidden scrollbar-none">
             {projects.map((project) => (
               <div
                 key={project.id}
@@ -698,9 +723,9 @@ const Portfolio: React.FC = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6 bg-slate-800/50">
+      <section id="contact" className="py-20 px-6">
         <div className="max-w-4xl mx-auto  space-y-4">
-          <h2 className="text-4xl text-center font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl text-center font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent overflow-y-scroll [&::-webkit-scrollbar]:hidden scrollbar-none">
             {/* Let&apos;s Work Together */}
             Dear future employer,
           </h2>
@@ -724,16 +749,16 @@ const Portfolio: React.FC = () => {
             problem-solver who sees a roadmap.
           </p>
           <p className="">
-            For instance, I&apos;m particularly proud of{" "}
+            {/* For instance, I&apos;m particularly proud of{" "}
             <span className="text-bold">
               re-architecting the checkout flow for Goldies Application, which
               increased conversion by 15%.
-            </span>
-            This isn&apos;t just a bullet point; it shows I don&apos;t settle
-            for &quot;good enough&quot; when &quot;great&quot; is achievable. My
-            approach is always rooted in the belief that the best solutions are
-            the ones that are both technically robust and genuinely helpful to
-            the user.
+            </span> */}
+            {/* This isn&apos;t just a bullet point; it shows */}I don&apos;t
+            settle for &quot;good enough&quot; when &quot;great&quot; is
+            achievable. My approach is always rooted in the belief that the best
+            solutions are the ones that are both technically robust and
+            genuinely helpful to the user.
           </p>
           <h3 className=" text-center text-2xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             What You Can Expect from Me
@@ -773,7 +798,10 @@ const Portfolio: React.FC = () => {
 
           <div className=" text-center grid md:grid-cols-3 gap-8 mb-12">
             <div className="p-6 bg-slate-800 rounded-lg border border-slate-700">
-              <Mail size={32} className="mx-auto mb-4 text-blue-400" />
+              <Mail
+                size={32}
+                className="mx-auto mb-4 text-blue-400 hover:scale-115 transition-all duration-300"
+              />
               <h3 className="font-semibold mb-2">Email</h3>
               <p className="text-slate-400 break-words">
                 oyewaletaiwo1803@gmail.com
@@ -781,7 +809,10 @@ const Portfolio: React.FC = () => {
             </div>
 
             <div className="p-6 bg-slate-800 rounded-lg border border-slate-700">
-              <Linkedin size={32} className="mx-auto mb-4 text-blue-400" />
+              <Linkedin
+                size={32}
+                className="mx-auto mb-4 text-blue-400 hover:scale-115 transition-all duration-300"
+              />
               <h3 className="font-semibold mb-2">LinkedIn</h3>
               <p className="text-slate-400  break-words  ">
                 www.linkedin.com/in/taiwo-oyewale199/
@@ -789,19 +820,24 @@ const Portfolio: React.FC = () => {
             </div>
 
             <div className="p-6 bg-slate-800 rounded-lg border border-slate-700">
-              <Github size={32} className="mx-auto mb-4 text-blue-400" />
+              <Github
+                size={32}
+                className="mx-auto mb-4 text-blue-400 hover:scale-115 transition-all duration-300"
+              />
               <h3 className="font-semibold mb-2">GitHub</h3>
               <p className="text-slate-400">@TaiwoSaidat</p>
             </div>
           </div>
 
-          <Link
-            href="mailto:oyewaletaiwo1803@gmail.com"
-            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-medium text-lg hover:shadow-lg hover:scale-105 transition-all duration-300"
-          >
-            <Mail size={20} className="mr-2" />
-            Get In Touch
-          </Link>
+          <div className="overflow-y-scroll [&::-webkit-scrollbar]:hidden scrollbar-none">
+            <Link
+              href="mailto:oyewaletaiwo1803@gmail.com"
+              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-medium text-lg hover:shadow-lg hover:scale-115 transition-all duration-300 "
+            >
+              <Mail size={20} className="mr-2" />
+              Get In Touch
+            </Link>
+          </div>
         </div>
       </section>
 
