@@ -724,7 +724,7 @@ const Portfolio: React.FC = () => {
 
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6">
-        <div className="max-w-4xl mx-auto  space-y-4">
+        <div className="max-w-4xl mx-auto  space-y-4 py-4">
           <h2 className="text-4xl text-center font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent overflow-y-scroll [&::-webkit-scrollbar]:hidden scrollbar-none">
             {/* Let&apos;s Work Together */}
             Dear future employer,
@@ -828,16 +828,13 @@ const Portfolio: React.FC = () => {
               <p className="text-slate-400">@TaiwoSaidat</p>
             </div>
           </div>
-
-          <div className="overflow-y-scroll [&::-webkit-scrollbar]:hidden scrollbar-none">
-            <Link
-              href="mailto:oyewaletaiwo1803@gmail.com"
-              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-medium text-lg hover:shadow-lg hover:scale-115 transition-all duration-300 "
-            >
-              <Mail size={20} className="mr-2" />
-              Get In Touch
-            </Link>
-          </div>
+          <Link
+            href="mailto:oyewaletaiwo1803@gmail.com"
+            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-medium text-lg hover:shadow-lg hover:scale-115 transition-all duration-300 "
+          >
+            <Mail size={20} className="mr-2" />
+            Get In Touch
+          </Link>
         </div>
       </section>
 
