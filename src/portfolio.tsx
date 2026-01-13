@@ -26,6 +26,7 @@ import job from "../public/jobPosts.png";
 import quizApp from "../public/quiz_app.png";
 import wanderlay from "../public/wanderlay.png";
 import tsu from "../public/TSU.png";
+import luminflix from "../public/luminflix.png";
 import events from "../public/events.png";
 import Link from "next/link";
 
@@ -128,6 +129,16 @@ const Portfolio: React.FC = () => {
       github: "https://github.com/Lahitan/beautyexpert/",
       demo: "https://beautyxpert.netlify.app/",
       image: beauty.src,
+    },
+    {
+      id: 13,
+      title: "Luminflix Application",
+      description:
+        "A movie app that displays a list of movies fetched from an external API. Users can search for movies, view details, and navigate through different genres. App in progress.",
+      tech: ["Reactjs", "Typescript", "Tailwind", "CSS", "HTML"],
+      github: "https://github.com/taiwoSaidat/luminflix",
+      demo: "https://luminflix.vercel.app/",
+      image: luminflix.src,
     },
     {
       id: 5,
