@@ -235,6 +235,26 @@ const Portfolio: React.FC = () => {
 
   const experiences: Experience[] = [
     {
+      id: 4,
+      company: "Technocrat Technologies | Spiro",
+      position: "Technical Operations Analyst",
+      duration: "2025 - Present",
+      description: [
+        "Provided application and backend support by accessing the database to investigate and resolve rider-reported issues related to payments, account status, and lease records.",
+        "Structured large volumes of rider  data, converting raw operational records into datasets for backend database ingestion.",
+        "Collaborate with design, backend and project management teams to deliver projects¬ in a timely manner.",
+      ],
+      tech: [
+        "MySQL",
+        "Relational Databases",
+        "Backend Troubleshooting",
+        "Advanced excel",
+        "DB Admin",
+        "App DB Systems",
+        "Data structuring",
+      ],
+    },
+    {
       id: 1,
       company: "Freelance Projects",
       position: "Frontend Engineer",
