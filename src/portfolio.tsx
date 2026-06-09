@@ -49,6 +49,12 @@ interface Experience {
   tech: string[];
 }
 
+type Socials = {
+  href: string;
+  icon: React.ReactNode;
+  label: string;
+};
+
 const Portfolio: React.FC = () => {
   const [activeSection, setActiveSection] = useState("hero");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -235,6 +241,29 @@ const Portfolio: React.FC = () => {
 
   const experiences: Experience[] = [
     {
+      id: 5,
+      company: "Reepay Technologies",
+      position: "Frontend Engineer",
+      duration: "2026 - Present",
+      description: [
+        "Led front-end efforts by building frontend features for company sites improving lead generation and online visibility by 30%.",
+        "Optimized application architecture using Next.js App Router and React Server Components (RSC), reducing client-side JavaScript bundle size by 20% and significantly improving First Contentful Paint (FCP).",
+        "Engineered secure, end-to-end fintech payment workflows integrating Squad, SafeHaven, and VTPass webhook architectures; implemented robust client-side validation to ensure zero-fault wallet funding and real-time balance synchronization.",
+        "Developed authentication system with protected/public route architecture and full profile management",
+        "Implemented transaction history with dynamic filtering for improved financial visibility.",
+      ],
+      tech: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind",
+        "Squad API Integration",
+        "SafeHaven API Integration",
+        "VTPass Webhook",
+        "State Management",
+        "Data Query",
+      ],
+    },
+    {
       id: 4,
       company: "Technocrat Technologies | Spiro",
       position: "Technical Operations Analyst",
@@ -317,6 +346,69 @@ const Portfolio: React.FC = () => {
         "Collaborated in a cross-functional team working in an Agile environment to present MVP in a timely manner.",
       ],
       tech: ["Reactjs", "SCSS/SASS", "Tailwind", "CSS", "JavaScript", "HTML5"],
+    },
+  ];
+
+  const socials: Socials[] = [
+    {
+      href: "https://github.com/TaiwoSaidat",
+      icon: (
+        <Github
+          size={24}
+          className="group-hover:text-blue-400 transition-colors"
+        />
+      ),
+      label: "GitHub",
+    },
+    {
+      href: "https://www.linkedin.com/in/taiwo-oyewale199/",
+      icon: (
+        <Linkedin
+          size={24}
+          className="group-hover:text-blue-400 transition-colors"
+        />
+      ),
+      label: "LinkedIn",
+    },
+    {
+      href: "/Taiwo_Oyewale_Resume_Frontend_Engineer.pdf",
+      icon: (
+        <FileType
+          size={24}
+          className="group-hover:text-blue-400 transition-colors"
+        />
+      ),
+      label: "Resume",
+    },
+    {
+      href: "https://medium.com/@oyewaletaiwo1803",
+      icon: (
+        <SiMedium
+          size={24}
+          className="group-hover:text-blue-400 transition-colors"
+        />
+      ),
+      label: "Medium",
+    },
+    {
+      href: "mailto:oyewaletaiwo1803@gmail.com",
+      icon: (
+        <Mail
+          size={24}
+          className="group-hover:text-blue-400 transition-colors"
+        />
+      ),
+      label: "Email",
+    },
+    {
+      href: "https://wa.me/+2348145701901",
+      icon: (
+        <PiWhatsappLogoLight
+          size={24}
+          className="group-hover:text-blue-400 transition-colors"
+        />
+      ),
+      label: "WhatsApp",
     },
   ];
 
@@ -407,7 +499,7 @@ const Portfolio: React.FC = () => {
         id="hero"
         className="  min-h-screen pt-8 flex items-center justify-center px-6 bg-gradient-to-br from-slate-900 via-blue-900/20 to-purple-900/20"
       >
-        <div className="text-center max-w-4xl mx-auto">
+        <div className="text-center max-w-4xl mx-auto space-y-8 ">
           <div className="mb-8 relative">
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-500 p-1">
               <div className="w-full h-full rounded-full bg-slate-800 flex items-center justify-center">
@@ -428,7 +520,8 @@ const Portfolio: React.FC = () => {
           </h1>
 
           <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
-            Frontend Developer crafting exceptional digital experiences
+            Frontend Developer
+            {/* crafting exceptional digital experiences */}
           </p>
 
           <p className="text-lg text-slate-400 mb-12 max-w-2xl mx-auto">
@@ -452,78 +545,23 @@ const Portfolio: React.FC = () => {
             </button>
           </div>
           {/* social media links */}
-          <div className="flex justify-center flex-wrap gap-4 p-4 ">
-            <Link
-              href="https://github.com/TaiwoSaidat"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 hover:scale-115 transition-all duration-300 group"
-            >
-              <Github
-                size={24}
-                className="group-hover:text-blue-400 transition-colors"
-              />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/taiwo-oyewale199/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 hover:scale-115 transition-all duration-300 group"
-            >
-              <Linkedin
-                size={24}
-                className="group-hover:text-blue-400 transition-colors"
-              />
-            </Link>
-            <Link
-              href="/Taiwo_Oyewale_Resume_Frontend_Engineer.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 hover:scale-115 transition-all duration-300 group"
-            >
-              <FileType
-                size={24}
-                className="group-hover:text-blue-400 transition-colors"
-              />
-            </Link>
-            <Link
-              href="https://medium.com/@oyewaletaiwo1803"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 hover:scale-115 transition-all duration-300 group"
-            >
-              <SiMedium
-                size={24}
-                className="group-hover:text-blue-400 transition-colors"
-              />
-            </Link>
-            <Link
-              href="mailto:oyewaletaiwo1803@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 hover:scale-115 transition-all duration-300 group"
-            >
-              <Mail
-                size={24}
-                className="group-hover:text-blue-400 transition-colors"
-              />
-            </Link>
-            <Link
-              href="https://wa.me/+2348145701901"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 hover:scale-115 transition-all duration-300 group"
-            >
-              <PiWhatsappLogoLight
-                size={24}
-                className="group-hover:text-blue-400 transition-colors"
-              />
-            </Link>
+          <div className="flex justify-center flex-wrap gap-4 p-4">
+            {socials.map(({ href, icon, label }) => (
+              <Link
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-slate-800 rounded-full hover:bg-slate-700 hover:scale-115 transition-all duration-300 group"
+              >
+                {icon}
+              </Link>
+            ))}
           </div>
 
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <ChevronDown size={32} className="text-slate-400" />
-          </div>
+          </div> */}
         </div>
       </section>
 
